@@ -1,0 +1,87 @@
+nav {
+  height: 100px;
+  transition: height 0.3s ease-in-out;
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-nav .nav-link,
+.navbar-brand {
+  color: white !important;
+}
+
+.nav-link {
+  margin-left: 20px;
+}
+
+.initial-scroll-navbar {
+  border-bottom: 1px solid #ffffff;
+}
+
+.after-scroll-navbar {
+  background: white;
+}
+
+.after-scroll-navbar .navbar-nav .nav-link,
+.after-scroll-navbar .navbar-brand {
+  color: black !important;
+}
+
+.nav-links {
+  justify-content: end;
+}
+
+.sticky-header {
+  transition: visibility 0.3s ease-in-out;
+  background: #121212;
+  color: white;
+  font-size: 15px;
+  padding: 1% 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-links{
+  display: flex;
+  gap: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.sticky-header.hidden {
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: visibility 0.3s ease-in-out;
+}
+
+.sticky-header img{
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.scrolling {
+  height: 60px !important;
+  transition: height 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    height: 80px;
+  }
+  .sticky-header {
+    display: none;
+  }
+}
